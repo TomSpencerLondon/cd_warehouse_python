@@ -3,13 +3,13 @@ import unittest
 
 class CompactDisc(object):
     def __init__(self, initial_stock):
-        pass
+        self._stock_count = initial_stock
 
     def get_stock_count(self):
-        return 5
+        return self._stock_count
 
     def buy(self, quantity):
-        pass
+        self._stock_count -= quantity
 
 
 class BuyCdTest(unittest.TestCase):
