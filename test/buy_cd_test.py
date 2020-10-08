@@ -6,7 +6,7 @@ class CompactDisc(object):
         pass
 
     def get_stock_count(self):
-        pass
+        return 5
 
     def buy(self, quantity):
         pass
